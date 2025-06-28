@@ -67,7 +67,7 @@ namespace DataAccessLayer
         {
             foreach (Product p in listProducts.ToList())
             {
-                if (p. == product.ProductID)
+                if (p.ProductID == product.ProductID)
                 {
                     listProducts.Remove(p);  
                 }

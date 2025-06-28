@@ -9,6 +9,7 @@ namespace DataAccessLayer
 {
     public class AccountDAO
     {
+        public AccountDAO() { }
         public static AccountMember GetAccountById(string accountID)
         {
             AccountMember accountMember = new AccountMember();

@@ -8,19 +8,20 @@ namespace BusinessObjects
 {
     public partial class Product
     {
-        public Product(int id, string name, int catId, short unitInStock, 
+        public Product() { }
+        public Product(int id, string name, int catID, short unitsInStock, 
             decimal price)
         {
             this.ProductID = id;
             this.ProductName = name;
-            this.CategoryId = catId;
-            this.UnitInStock = unitInStock;
+            this.CategoryID = catID;
+            this.UnitsInStock = unitsInStock;
             this.UnitPrice = price;
         }
         public int ProductID { get; set; }
         public string ProductName { get; set; }
-        public int CategoryId { get; set; }
-        public short UnitInStock { get; set; }
+        public int CategoryID { get; set; }
+        public short UnitsInStock { get; set; }
         public decimal UnitPrice { get; set; }
         public virtual Category Category { get; set; }
     }
